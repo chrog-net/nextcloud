@@ -1,0 +1,9 @@
+[Unit]
+Description = set read-only right to nextcloud file folder
+After = network.target
+ 
+[Service]
+ExecStart = /usr/local/bin/nextcloud-readonly.sh
+ 
+[Install]
+WantedBy = multi-user.target
